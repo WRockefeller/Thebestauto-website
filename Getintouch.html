@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css ">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+         
+        .box {
+            width: 100%;
+            height: auto;
+            background-color: var(--background-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-top-right-radius: 2rem ;
+            border-top-left-radius: 2rem;
+            margin: 0;
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+        
+        h1 {
+            margin-bottom: 6rem;
+            font-size: 6rem;
+            margin-top: 7rem;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+            color: var(--background-color);
+            text-align: center;
+            padding: 2rem;
+        }
+        .para {
+            font-size: 2rem;
+            font-weight: 400;
+            font-family: sans-serif;
+            font-weight: 600;
+            text-align: center;
+            color: var(--border-color);
+            line-height: 3.5rem;
+            width: 100%;
+        }
+        body {
+            background-color: var(--border-color);
+        }
+        body {
+        margin: 0;
+        padding: 0;
+    }
+ 
+
+    .nav-log-sec {
+            margin-top: 3rem;
+        }
+        nav {
+            display: flex;
+            width: 90%;
+            background-color: var(--border-color);
+            justify-content: space-between;
+            align-items: center;
+            padding: 3rem 3rem;
+        }
+
+        nav > .nav-sec {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        #hamburger {
+            display: none; /* Hide hamburger by default */
+            font-size: 2rem;
+            cursor: pointer;
+            color: #fff;
+            margin-left: auto;
+            
+            z-index: 1100;
+        }
+
+
+        /* Sliding Menu */
+        .mobile-menu {
+            display: none; /* Hidden by default */
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 250px;
+            background-color: var(--border-color);
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding-top: rem;
+            gap: 2rem;
+            z-index: 1000;
+            transition: transform 0.3s ease-in-out;
+            transform: translateX(100%);
+            padding-right: rem;
+        }
+
+        .mobile-menu a {
+            color: #fff;
+            font-family: sans-serif, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
+        .mobile-menu.open {
+            display: flex;
+            transform: translateX(0); /* Slide in from the right */
+        }
+
+        /* Media Query for Mobile Devices */
+        @media screen and (max-width: 768px) {
+        nav {
+            width: 80%; /* Reduce the width of the nav on smaller screens */
+            padding: 2rem 1.5rem; /* Adjust padding to suit the reduced width */
+            margin: 0 auto; /* Center the nav horizontally */
+        }
+
+        #hamburger {
+            display: block; /* Show hamburger on mobile */
+        }
+
+        nav > .nav-sec {
+            display: none; /* Hide regular menu on mobile */
+        }
+
+        h1 {
+            font-size: 4rem;
+            padding: 0;
+        }
+
+        .para {
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+        }
+
+        .map {
+            width: 100%; /* Set width to 100% for mobile */
+            height: 350px; /* Adjust height for mobile */
+        }
+
+        .map iframe {
+            width: 100%; /* Ensure the iframe fits within the map container */
+            height: 100%; /* Maintain the aspect ratio */
+        }
+    }
+
+    @media screen and (max-width:500px){
+       h1 {
+        font-size: 4rem;
+        padding: 0;
+       }
+       .para {
+        font-size: 1.25rem;
+        line-height: 2.5rem;
+       }
+       .map {
+        right: 4rem;
+        
+       }
+    }
+
+
+        @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateX(100%);
+        }
+        to {
+            opacity: 2;
+            transform: translateX(0);
+        }
+    }
+
+
+        :root {
+            --border-color: rgb(11, 50, 194);
+            --background-color: white;
+        }
+
+        body {
+            background-color: var(--border-color);
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+            margin: 0px;
+        }
+
+        a, p span {
+            font-family: Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            color: #fff;
+            transition: 1s;
+            
+            text-decoration: none;
+            
+            
+        }
+
+        a:hover {
+            color: rgb(162, 169, 241);
+        }
+
+
+        .fa-whatsapp {
+        color: white;
+        font-size: 2.50rem;
+    }
+
+
+    .sticky-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 60px; /* Set the width */
+        height: 60px; /* Set the height */
+        padding: 0; /* Remove padding for a perfect circle */
+        background-color: rgb(37, 211, 102);
+        color: rgb(192, 158, 158);
+        border: none;
+        border-radius: 50%; /* Makes the button circular */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 5000; /* Ensures the button stays above other elements */
+    }
+
+    .sticky-button:hover {
+        background-color:  rgb(27, 170, 80);
+    }
+
+    .fa-phone{
+        color: var(--border-color);
+        font-size: 2rem;
+    }
+
+    .sticky-button2 {
+        position: fixed;
+        bottom: 9rem;
+        right: 20px;
+        width: 60px; /* Set the width */
+        height: 60px; /* Set the height */
+        padding: 0; /* Remove padding for a perfect circle */
+        background-color: var(--background-color);
+        color: rgb(192, 158, 158);
+        border: none;
+        border-radius: 50%; /* Makes the button circular */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 5000; /* Ensures the button stays above other elements */
+    }
+
+    .sticky-button2:hover {
+        background-color: rgb(163, 165, 172);
+    }
+
+
+
+
+    </style>
+<nav>
+    <div id="nav-log-sec" class="nav-sec">
+        THE BEST
+    </div>
+    <div id="nav-lin-sec" class="nav-sec">
+        <a href="tab.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="Getintouch.html">CONTACT US</a>
+        <a href="services.html">SERVICES</a>
+    </div>
+    <div id="nav-soc-sec" class="nav-sec">
+        <a href="mailto:milancbiju@gmail.com">EMAIL US</a>
+    </div>
+    <!-- Hamburger Icon -->
+    <div id="hamburger" class="hamburger">
+        <ion-icon name="menu-outline"></ion-icon>
+    </div>
+</nav>
+
+<!-- Sliding Menu -->
+<div id="mobile-menu" class="mobile-menu">
+    <a href="tab.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="Getintouch.html">CONTACT US</a>
+    <a href="services.html">SERVICES</a>
+</div>
+
+</head>
+<body>
+    <h1>Let's Get in Touch</h1>
+    <div class="box">
+        <div class="para">
+            Visit us at the following address: Al Dhafra, Abu Dhabi, United Arab Emirates. <br>
+            If you prefer to speak directly with us, feel free to call us at 055 856 4990 or Email us at <br> thebestautorepairworkshop@gmail.com. <br>
+            Our team is ready to assist you with any inquiries or to schedule an appointment. <br>
+            We look forward to hearing from you!
+        </div>
+    </div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14617.806782471856!2d53.7324218!3d23.6597995!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e676792ff392381%3A0x62d5dac0309c8d27!2sThe%20Best%20Auto%20Repair%20Workshop!5e0!3m2!1sen!2sae!4v1724051309831!5m2!1sen!2sae" width="1500rem" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <button class="sticky-button">
+        <a href="https://wa.me/0545315058">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </button>
+    
+    <button class="sticky-button2">
+        <a href="tel:+0545315058">
+            <i class="fa-solid fa-phone"></i>
+        </a>
+    </button>
+</body>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+     const mobileMenu = document.getElementById('mobile-menu');
+
+     hamburger.addEventListener('click', () => {
+         if (mobileMenu.classList.contains('open')) {
+             mobileMenu.classList.remove('open');
+             setTimeout(() => {
+                 mobileMenu.style.display = 'none';
+             }, 300); // Matches the duration of the animation
+         } else {
+             mobileMenu.style.display = 'flex';
+             setTimeout(() => {
+                 mobileMenu.classList.add('open');
+             }, 10); // Short delay to allow display change to take effect
+         }
+     });
+ </script>
+
+</html>
