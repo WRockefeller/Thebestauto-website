@@ -23,7 +23,7 @@
 
         </div>
         <div id="nav-soc-sec" class="nav-sec">
-            <a href="tel:+0558564990">CALL US</a>
+            <a href="tel:+0545315058">CALL US</a>
         </div>
         <!-- Hamburger Icon -->
         <div id="hamburger" class="hamburger">
@@ -53,13 +53,13 @@
     </div>
 
     <button class="sticky-button">
-        <a href="https://wa.me/0558564990">
+        <a href="https://wa.me/0545315058">
             <i class="fa-brands fa-whatsapp"></i>
         </a>
     </button>
 
     <button class="sticky-button2">
-        <a href="tel:+0558564990">
+        <a href="tel:+0545315058">
             <i class="fa-solid fa-phone"></i>
         </a>
     </button>
@@ -152,85 +152,109 @@
 
 <style>
 
-.main-heading {
-    font-family: sans-serif, 'Trebuchet MS', sans-serif;
-    font-size: 2.5rem;
-    color: var(--border-color);
-    margin-bottom: 0.5rem;
-}
-  .new-section {
-    padding: 2rem;
-    background-color: var(--background-color);
-    text-align: center;
-    margin-top: 20rem;
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
-}
+        .main-heading {
+            font-family: sans-serif, 'Trebuchet MS', sans-serif;
+            font-size: 2.5rem;
+            color: var(--border-color);
+            margin-bottom: 0.5rem;
+        }
+        .new-section {
+            padding: 2rem;
+            background-color: var(--background-color);
+            text-align: center;
+            margin-top: 20rem;
+            border-top-left-radius: 2rem;
+            border-top-right-radius: 2rem;
+        }
 
-.services-row {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 1rem;
-}
+        .services-row {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 1rem;
+        }
 
-.service-column {
-    width: 40%;
-    text-align: center;
-}
+        .service-column {
+            width: 40%;
+            text-align: center;
+        }
 
-h2 {
-    font-family: sans-serif, 'Trebuchet MS', sans-serif;
-    font-size: 2rem;
-    color: var(--border-color);
-    margin-bottom: 1rem;
-}
+        h2 {
+            font-family: sans-serif, 'Trebuchet MS', sans-serif;
+            font-size: 2rem;
+            color: var(--border-color);
+            margin-bottom: 1rem;
+        }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
 
-li {
-    font-family: Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1rem;
-    color: #333;
-    margin-bottom: 0.5rem;
-}
+        li {
+            font-family: Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
 
-@media screen and (max-width: 1024px) {
-    .services-row {
-        flex-direction: column;
-        align-items: center;
-    }
+        @media screen and (max-width: 1024px) {
+            .services-row {
+                flex-direction: column;
+                align-items: center;
+            }
 
-    .service-column {
-        width: 80%;
-        margin-bottom: 2rem;
-    }
-}
+            .service-column {
+                width: 80%;
+                margin-bottom: 2rem;
+            }
+        }
 
-@media screen and (max-width: 768px) {
-    .new-section {
-        margin-top : 230%;
-    }
-    .services-row {
-        flex-direction: column;
-        top : 950%;
-    }
+        @media screen and (max-width: 768px) {
+            .new-section {
+                margin-top : 230%;
+            }
+            .services-row {
+                flex-direction: column;
+                top : 950%;
+            }
 
-    .service-column {
-        width: 100%;
-        text-align: center;
-    }
+            .service-column {
+                width: 100%;
+                text-align: center;
+            }
 
-    h2 {
-        font-size: 1.5rem;
-    }
+            h2 {
+                font-size: 1.5rem;
+            }
 
-    li {
-        font-size: 1rem;
-    }
-}
+            li {
+                font-size: 1rem;
+            }
+        }
+
+
+        @media screen and (max-width: 480px) {
+            .new-section {
+                margin-top : 250%;
+            }
+            .services-row {
+                flex-direction: column;
+                top : 950%;
+            }
+
+            .service-column {
+                width: 100%;
+                text-align: center;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            li {
+                font-size: 1rem;
+            }
+        }
 
 
 
@@ -591,8 +615,8 @@ li {
         @media screen and (max-width : 480px) {
             .wrapper {
                 gap: 15px;
-                top: 153%;
-               
+                top: 150%;
+            
 
             }
 
@@ -603,7 +627,7 @@ li {
            
 
             .container {
-                height:  30vmin;
+                height:  35vmin;
                 width: 100%;
                 font-size: 8px;
                 gap: 1rem
@@ -615,14 +639,13 @@ li {
             
         }
 
-    </style>
+</style>
 
-    <script>
+<script>
 
-document.addEventListener('DOMContentLoaded', () => {
+    document.addEventListener('DOMContentLoaded', () => {
     let valueDisplays = document.querySelectorAll(".num");
 
-    // Common total duration for all counters (in milliseconds)
     let commonDuration = 3000; // 3 seconds for all counters to complete
 
     valueDisplays.forEach((valueDisplay) => {
@@ -641,38 +664,29 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
 
+    hamburger.addEventListener('click', () => {
+    if (mobileMenu.classList.contains('open')) {
+        mobileMenu.classList.remove('open');
+        setTimeout(() => {
+            mobileMenu.style.display = 'none';
+        }, 300); // Matches the duration of the animation
+    } else {
+        mobileMenu.style.display = 'flex';
+        setTimeout(() => {
+            mobileMenu.classList.add('open');
+        }, 10); // Short delay to allow display change to take effect
+    }
+});
 
-
-
-
-
-
-
-
-
-
-        const hamburger = document.getElementById('hamburger');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        hamburger.addEventListener('click', () => {
-            if (mobileMenu.classList.contains('open')) {
-                mobileMenu.classList.remove('open');
-                setTimeout(() => {
-                    mobileMenu.style.display = 'none';
-                }, 300); // Matches the duration of the animation
-            } else {
-                mobileMenu.style.display = 'flex';
-                setTimeout(() => {
-                    mobileMenu.classList.add('open');
-                }, 10); // Short delay to allow display change to take effect
-            }
-        });
 
 
         
-    </script>
+</script>
 
 
 </body>
 </html>
+
