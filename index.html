@@ -89,53 +89,148 @@
     </div>
     
        
-   <!-- New Header and Paragraph -->
-   <div class="new-section">
-    <h1 class="new-header">Our Commitment to Excellence</h1>
-    <p class="new-paragraph">At THE BEST, we are dedicated to providing top-notch service with unmatched expertise. Our team is committed to ensuring your satisfaction with every visit. Discover why we are the trusted choice for auto care.</p>
-</div>
+    <div class="new-section">
+        <h1 class="main-heading">Our Services</h1>
+        <div class="services-row">
+            <div class="service-column">
+                <h2>Mechanical Services</h2>
+                <ul>
+                    <li>Transmission Repair</li>
+                    <li>AC Repair</li>
+                    <li>Major Service</li>
+                    <li>Minor Service</li>
+                </ul>
+            </div>
+            <div class="service-column">
+                <h2>Bodyshop</h2>
+                <ul>
+                    <li>Denting and Painting</li>
+                    <li>Accident Repair</li>
+                    <li>Chassis Repair</li>
+                    <li>Smart Repair</li>
+                </ul>
+            </div>
+            <div class="service-column">
+                <h2>Car Detailing</h2>
+                <ul>
+                    <li>Car Tinting</li>
+                    <li>Ceramic Coating</li>
+                    <li>Paint Protection Film (PPF)</li>
+                    <li>Car Polishing</li>
+                </ul>
+            </div>
+        </div>
+        <div class="services-row">
+            <div class="service-column">
+                <h2>Electrical Services</h2>
+                <ul>
+                    <li>Computer Checkup</li>
+                    <li>Navigation Updates</li>
+                    <li>Apple CarPlay Activation</li>
+                    <li>Miles to KM Conversion</li>
+                </ul>
+            </div>
+            <div class="service-column">
+                <h2>Engine Repair Services</h2>
+                <ul>
+                    <li>Engine Overhauling</li>
+                    <li>Engine Cooling System Repair</li>
+                    <li>Engine Control Unit Repair</li>
+                </ul>
+            </div>
+            <div class="service-column">
+                <h2>More Services</h2>
+                <ul>
+                    <li>Customization</li>
+                    <li>Fleet Maintenance</li>
+                    <li>etc..</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
 
 <style>
-    /* Existing Styles */
 
-    /* New Section Styling */
-/* Existing Styles */
+.main-heading {
+    font-family: sans-serif, 'Trebuchet MS', sans-serif;
+    font-size: 2.5rem;
+    color: var(--border-color);
+    margin-bottom: 0.5rem;
+}
+  .new-section {
+    padding: 2rem;
+    background-color: var(--background-color);
+    text-align: center;
+    margin-top: 20rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
 
-/* New Section Styling */
-        .new-section {
-            padding: 2rem;
-            background-color: var(--background-color);
-            text-align: center;
-            margin-top: 15rem; /* Add some space above the new section */
-        }
+.services-row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
 
-        .new-header {
-            font-family: sans-serif, 'Trebuchet MS', sans-serif;
-            font-size: 2.5rem;
-            color: var(--border-color);
-            margin-bottom: 1rem;
-        }
+.service-column {
+    width: 40%;
+    text-align: center;
+}
 
-        .new-paragraph {
-            font-family: Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 1.25rem;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-        }
+h2 {
+    font-family: sans-serif, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    color: var(--border-color);
+    margin-bottom: 1rem;
+}
 
+ul {
+    list-style-type: none;
+    padding: 0;
+}
 
-        @media screen and (max-width: 1024px) {
-            .new-section {
-                margin-top: 40rem;
-            }
-        }
+li {
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
 
-        @media screen and (max-width: 768px) {
-            .new-section {
-                margin-top: 60rem;
-            }
-        }
+@media screen and (max-width: 1024px) {
+    .services-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-column {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .new-section {
+        margin-top : 230%;
+    }
+    .services-row {
+        flex-direction: column;
+        top : 950%;
+    }
+
+    .service-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    li {
+        font-size: 1rem;
+    }
+}
 
 
 
@@ -497,6 +592,7 @@
             .wrapper {
                 gap: 15px;
                 top: 153%;
+               
 
             }
 
@@ -507,7 +603,7 @@
            
 
             .container {
-                height:  35vmin;
+                height:  30vmin;
                 width: 100%;
                 font-size: 8px;
                 gap: 1rem
@@ -580,4 +676,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
 </body>
 </html>
-
