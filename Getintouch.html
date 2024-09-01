@@ -9,8 +9,10 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <style>
          
-        .box {
-            width: 100%;
+       .box {
+            border-top-left-radius:2rem ;
+            border-top-right-radius:2rem ;
+            width: 100vw; /* Make the box take the full viewport width */
             height: auto;
             background-color: var(--background-color);
             display: flex;
@@ -18,11 +20,9 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            border-top-right-radius: 2rem ;
-            border-top-left-radius: 2rem;
-            margin: 0;
-            padding: 2rem;
-            box-sizing: border-box;
+            margin: 0; /* Remove any margin */
+            padding: 2rem 2rem; /* Keep vertical padding but remove horizontal padding */
+            box-sizing: border-box; /* Ensure padding does not affect the width */
         }
         
         h1 {
