@@ -643,7 +643,7 @@
 
 <script>
 
-    document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     let valueDisplays = document.querySelectorAll(".num");
 
     let commonDuration = 3000; // 3 seconds for all counters to complete
@@ -655,10 +655,10 @@
 
         let counter = setInterval(() => {
             startValue += increment;
-            valueDisplay.textContent = Math.round(startValue).toLocaleString(); // Add commas to the number
+            valueDisplay.textContent = Math.round(startValue).toLocaleString('en-US'); // Force 'en-US' locale to format numbers
             if (startValue >= endValue) {
                 clearInterval(counter);
-                valueDisplay.textContent = endValue.toLocaleString() + "+"; // Set the final value and add a "+" after the animation
+                valueDisplay.textContent = endValue.toLocaleString('en-US') + "+"; // Final value with "+"
             }
         }, 10); // Adjust the interval for smoother updates
     });
